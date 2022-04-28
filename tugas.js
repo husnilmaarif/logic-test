@@ -33,28 +33,40 @@ let b = 7;
 [a, b] = [b, a];
 
 console.log("==========");
-console.log("a = " + a);
-console.log("b = " + b);
+console.log(`a = ${a}`);
+console.log(`b = ${b}`);
 // ========================================
 
 // NOMOR 5
 let angka = 104;
 
-switch (angka) {
-  case 4:
-    angka = "Empat";
-    break;
-  case 20:
-    angka = "Dua Puluh";
-    break;
-  case 39:
-    angka = "Tiga Puluh Sembilan";
-    break;
-  default:
-    angka = "Silahkan masukkan bilangan 1-100";
+function cekAngka(angka) {
+  if (angka == 1) {
+    alert("satu");
+  } else if (angka == 2) {
+    alert("dua");
+  } else if (angka == 3) {
+    alert("tiga");
+  } else if (angka == 4) {
+    alert("empat");
+  } else if (angka == 5) {
+    alert("lima");
+  } else if (angka == 6) {
+    alert("enam");
+  } else if (angka == 7) {
+    alert("tujuh");
+  } else if (angka == 8) {
+    alert("delapan");
+  } else if (angka == 9) {
+    alert("sembilan");
+  } else if (angka == 10) {
+    alert("sepuluh");
+  } else {
+    alert("masukkan angka 1-10");
+  }
 }
 console.log("==========");
-console.log(angka);
+cekAngka(angka);
 // ========================================
 
 // NOMOR 6
@@ -78,14 +90,48 @@ console.log(panjangData);
 // ========================================
 
 // NOMOR 9
-const arr = [4, 2, 6, 88, 3, 11];
+// max number prototype
+Number.prototype.maxNumber = function () {
+  let value = this.valueOf();
+  value = String(value);
 
-const min = Math.min(...arr);
-const max = Math.max(...arr);
+  let numbers = value.split("");
+  let result = [...numbers].shift();
+
+  for (let num of numbers) {
+    if (num > result) {
+      result = num;
+    }
+  }
+
+  return Number(result);
+};
+
+// min number prototype
+Number.prototype.minNumber = function () {
+  let value = this.valueOf();
+  value = String(value);
+
+  let numbers = value.split("");
+  let result = [...numbers].shift();
+
+  for (let num of numbers) {
+    if (num < result) {
+      result = num;
+    }
+  }
+
+  return Number(result);
+};
+
+let numbers = 42688311;
+let max = numbers.maxNumber();
+let min = numbers.minNumber();
 
 console.log("==========");
-console.log(min);
-console.log(max);
+console.log("Numbers:", numbers);
+console.log("Max:", max);
+console.log("Min:", min);
 // ========================================
 
 // NOMOR 10
