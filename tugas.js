@@ -38,35 +38,95 @@ console.log(`b = ${b}`);
 // ========================================
 
 // NOMOR 5
-let angka = 104;
+let cekAngka = prompt("silahkan masukkan angka dari 1-40. (masih percobaan)");
 
-function cekAngka(angka) {
-  if (angka == 1) {
-    alert("satu");
-  } else if (angka == 2) {
-    alert("dua");
-  } else if (angka == 3) {
-    alert("tiga");
-  } else if (angka == 4) {
-    alert("empat");
-  } else if (angka == 5) {
-    alert("lima");
-  } else if (angka == 6) {
-    alert("enam");
-  } else if (angka == 7) {
-    alert("tujuh");
-  } else if (angka == 8) {
-    alert("delapan");
-  } else if (angka == 9) {
-    alert("sembilan");
-  } else if (angka == 10) {
-    alert("sepuluh");
-  } else {
-    alert("masukkan angka 1-10");
-  }
+if (cekAngka == 1) {
+  cekAngka = "satu";
+} else if (cekAngka == 2) {
+  cekAngka = "dua";
+} else if (cekAngka == 3) {
+  cekAngka = "tiga";
+} else if (cekAngka == 4) {
+  cekAngka = "empat";
+} else if (cekAngka == 5) {
+  cekAngka = "lima";
+} else if (cekAngka == 6) {
+  cekAngka = "enam";
+} else if (cekAngka == 7) {
+  cekAngka = "tujuh";
+} else if (cekAngka == 8) {
+  cekAngka = "delapan";
+} else if (cekAngka == 9) {
+  cekAngka = "sembilan";
+} else if (cekAngka == 10) {
+  cekAngka = "sepuluh";
+} else if (cekAngka == 11) {
+  cekAngka = "sebelas";
+} else if (cekAngka == 12) {
+  cekAngka = "dua belas";
+} else if (cekAngka == 13) {
+  cekAngka = "tiga belas";
+} else if (cekAngka == 14) {
+  cekAngka = "empat belas";
+} else if (cekAngka == 15) {
+  cekAngka = "lima belas";
+} else if (cekAngka == 16) {
+  cekAngka = "enam belas";
+} else if (cekAngka == 17) {
+  cekAngka = "tujuh belas";
+} else if (cekAngka == 18) {
+  cekAngka = "delapan belas";
+} else if (cekAngka == 19) {
+  cekAngka = "sembilan belas";
+} else if (cekAngka == 20) {
+  cekAngka = "dua puluh";
+} else if (cekAngka == 21) {
+  cekAngka = "dua puluh satu";
+} else if (cekAngka == 22) {
+  cekAngka = "dua puluh dua";
+} else if (cekAngka == 23) {
+  cekAngka = "dua puluh tiga";
+} else if (cekAngka == 24) {
+  cekAngka = "dua puluh empat";
+} else if (cekAngka == 25) {
+  cekAngka = "dua puluh lima";
+} else if (cekAngka == 26) {
+  cekAngka = "dua puluh enam";
+} else if (cekAngka == 27) {
+  cekAngka = "dua puluh tujuh";
+} else if (cekAngka == 28) {
+  cekAngka = "dua puluh delapan";
+} else if (cekAngka == 29) {
+  cekAngka = "dua puluh sembilan";
+} else if (cekAngka == 30) {
+  cekAngka = "tiga puluh";
+} else if (cekAngka == 31) {
+  cekAngka = "tiga puluh satu";
+} else if (cekAngka == 32) {
+  cekAngka = "tiga puluh dua";
+} else if (cekAngka == 33) {
+  cekAngka = "tiga puluh tiga";
+} else if (cekAngka == 34) {
+  cekAngka = "tiga puluh empat";
+} else if (cekAngka == 35) {
+  cekAngka = "tiga puluh lima";
+} else if (cekAngka == 36) {
+  cekAngka = "tiga puluh enam";
+} else if (cekAngka == 37) {
+  cekAngka = "tiga puluh tujuh";
+} else if (cekAngka == 38) {
+  cekAngka = "tiga puluh delapan";
+} else if (cekAngka == 39) {
+  cekAngka = "tiga puluh sembilan";
+} else if (cekAngka == 40) {
+  cekAngka = "empat puluh";
+} else {
+  cekAngka = "silahkan masukkan bilangan 1-100";
 }
+
 console.log("==========");
-cekAngka(angka);
+alert(cekAngka);
+console.log(cekAngka);
 // ========================================
 
 // NOMOR 6
